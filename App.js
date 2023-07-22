@@ -1,13 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import LoginForm from './src/components/login/loginForm';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import NavigationTab from './src/navegation/NavegationTab';
 
 export default function App() {
+  const navTheme = {
+    dark: true,
+  }
   return (
-    <View style={styles.container}>
-      <LoginForm />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer theme={navThemennn}>
+      <NavigationTab/>
+    </NavigationContainer>
   );
 }
 
