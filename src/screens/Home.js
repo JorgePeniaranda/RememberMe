@@ -4,11 +4,11 @@ import React from "react";
 
 export default function Home(props) {
     const goToHome = (page) => {
-        navigation.navigate(page);
+        props.navigation.navigate(page);
     };
     return (
         <SafeAreaView>
-            <Button title='settings' onPress={() => goToHome("Home2")} />
+            <Button title='Table' onPress={() => goToHome("Table")} />
         </SafeAreaView>
     )
 }
