@@ -8,7 +8,10 @@ export default function Home(props) {
     };
     return (
         <SafeAreaView>
-            <Button title='Table' onPress={() => goToHome("Table")} />
+            <Button title='Calendario' onPress={() => goToHome("Calendario")} />
+            <Button title='Inventario' onPress={() => goToHome("Inventario")} />
+            <Button title='Alarmas' onPress={() => goToHome("Alarmas")} />
+            <Button title='Notas' onPress={() => goToHome("Notas")} />
         </SafeAreaView>
     )
 }
