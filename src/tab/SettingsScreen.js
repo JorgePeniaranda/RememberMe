@@ -2,8 +2,8 @@ import { StyleSheet, SafeAreaView, Text } from 'react-native'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function SettingsHome(props) {
-    const {user} = props;
+export default function SettingsScreen(props) {
+    const { user } = props;
     return (
         <SafeAreaView>
             <Text style={styles.text}>¡Bienvenido, {user}!</Text>
@@ -17,10 +17,10 @@ const styles = StyleSheet.create({
     },
 });
 
-SettingsHome.defaultProps = {
+SettingsScreen.defaultProps = {
     user: "pepe",
 }
 
-SettingsHome.propTypes = {
+SettingsScreen.propTypes = {
     user: PropTypes.string,
 }
